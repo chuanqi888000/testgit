@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+<title>客户配置</title>
+<link rel="stylesheet" href="css/date1.css" />
+<link  type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/jquery-calendar.js" ></script>
+<script src="js/fileSave.js"></script>
+<script src="js/tableExport.js"></script>
+<script language="javascript" src="js/table-customer.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+<div class="investment_f">
+
+  <div class="investment_title">
+
+    <div class="on">客户信息查询</div>
+
+    <div>客户道具发放</div>
+    
+    <div>黑名单</div>
+
+
+
+  </div>
+
+  <div class="investment_con">
+
+    <div class="investment_con_list kh_con">
+   
+    	<P id="bt">位置:首页/客户信息查询</P><br><br>
+    	<div id="search_switch">
+	    	<div class="kh_sy"><span>输入用户ID:</span><input type="text" class="inp1" id="search_id"></div><br><br>
+	    	<div class="kh_sy">
+		    	<input type="button" value="搜索" class="sel1" id="search">
+	        </div>
+    	</div>
+
+<!--动态生成-->
+    </div>
+    <div class="investment_con_list">
+
+    	<P id="bt">位置:首页/客户道具发放</P><br><br>
+		<div class="kh_sy">
+			<span>发放用户ID:</span><input type="text" class="inp1" id="search_id"><input type="button" value="上传表单" class="sel1" id="search_file">
+			
+		</div>
+		<div class="kh_sy" style="margin-top:20px;">
+			<span>发放道具:</span><input type="text" class="inp3 inp4"><input type="text" class="inp3 inp4"><input type="button" value="+" class="btnn">
+		</div>
+		<div class="kh_sy">
+			<input type="button" value="提交" class="sel1" id="search1">
+		</div>
+    </div>
+
+    <div class="investment_con_list">
+
+    	<P id="bt">位置:首页/黑名单</P><br><br>
+		<div class="kh_sy">
+			<span>加入黑名单:</span><input type="text" class="inp1" id="search_id"><input type="button" value="上传表单" class="sel1" id="search_file">
+			
+		</div>
+		<div class="kh_sy" style="margin-top:20px;">
+			<span>移出黑名单:</span><input type="text" class="inp1" id="search_id"><input type="button" value="上传表单" class="sel1" id="search_file">
+		</div>
+		<div class="kh_sy" style="margin-top:20px;">
+			<span>黑名单用户:</span><span>张三王思</span>
+		</div>
+		<div class="kh_sy">
+			<input type="button" value="提交" class="sel1" id="search1">
+		</div>
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+
+</body>
+
+</html>

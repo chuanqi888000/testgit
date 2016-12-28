@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+<title>咪咕活动</title>
+<link rel="stylesheet" href="css/date1.css" />
+<link  type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/jquery-calendar.js" ></script>
+<script src="js/fileSave.js"></script>
+<script src="js/tableExport.js"></script>
+<script type="text/javascript" src="js/page.js" ></script>
+<script language="javascript" src="js/common.js"></script>
+
+
+</head>
+
+<body>
+
+
+
+<div class="investment_f">
+
+  <div class="investment_title">
+
+    <div class="on">新建活动</div>
+
+    <div>往期活动</div>
+
+
+
+  </div>
+
+  <div class="investment_con">
+
+    <div class="investment_con_list">
+   
+      <P id="bt">位置:首页/咪咕活动/新建活动</P>
+      <form action="test.php" method="post" enctype="multipart/form-data">
+      ID:<input type="text" class="inp1"><br><br>  
+            活动名称：<input type="text" class="inp1"><br><br>
+            操作系统:<select class="sel">
+            		<option>安卓</option>    
+            		<option>ios</option>    
+            		<option>安卓/ios</option>    
+
+            </select><br><br>
+
+            开始时间:<input type="text" class="sj" onclick="$(this).calendar()"><br><br>
+            结束时间:<input type="text" class="sj" onclick="$(this).calendar()"><br><br>
+    <div style="clear:both;overflow:hidden"><span style="display:block;float:left">活动内容:</span>
+	<textarea rows="3" cols="50" style="display:block;float:left;border:1px solid #FF7700;"></textarea></div><br><br>
+	进入类型:<input type="text" class="inp1"><br><br>
+    <div style="clear:both;overflow:hidden"><span style="display:block;float:left">类型地址:</span>
+	<textarea rows="3" cols="50" style="display:block;float:left;border:1px solid #FF7700;"></textarea></div><br><br>
+             关联游戏:<select class="sel">
+            		<option>咪咕斗地主</option>
+            		<option>咪咕掼蛋</option> 
+            		<option>咪咕象棋</option> 
+
+            </select><br><br>
+             活动类型:<select class="sel">
+             	    <option>咪咕棋牌</option>
+            		<option>咪咕斗地主</option>
+            		<option>咪咕掼蛋</option> 
+            		<option>咪咕象棋</option> 
+
+            </select><br><br> 
+            图片/文件:<input type="file" name="images" multiple="true" class="inp2"><br><br>
+            发送对象:<select class=" sel3">
+			    <option>指定用户</option>
+			    <option>全体用户</option>
+			   </select><input type="button" value="上传表单" class="sel1" ><br><br>
+            是否显示:<select class="sel sel1">
+			    <option>显示</option>
+			    <option>隐藏</option>
+			   </select><br><br>
+            排序:<input type="text" class="inp1"><br><br>
+            操作人:<input type="text" class="inp1" required="required"><br><br><br><br>
+           <input type="submit" value="提交" class="sel1" id="sub">
+           <input type="reset" value="重置" class="sel1" id="res">
+           <input type="button" value="返回" class="sel1" id="bt1">
+      </form>
+    </div>
+
+    <div class="investment_con_list">
+
+      <P id="bt">位置:首页/咪咕活动/往期活动</P><br><br>
+      <!--<div id="xinxi">
+      	<span>编号</span>
+      	<span>操作系统</span>
+      	<span>房间标题</span>
+      	<span>开始时间</span>
+      	<span>结束时间</span>
+      	<span>排序</span>
+      	<span>是否显示</span>
+      	<span>操作</span>
+      </div>-->
+      <table id="table" style="width:100%;">
+
+		<thead style="width:100%;">
+			<tr>
+				
+				<td>编号ID</td>
+
+				<td>操作系统</td>
+
+				<td>活动名称</td>
+				
+				<td>开始时间</td>
+
+				<td>结束时间</td>
+				
+				<td>活动类型</td>
+				<td>排序</td>
+				
+				<td>是否显示</td>
+
+				<td>操作</td>
+
+			</tr>
+
+		</thead>
+
+		<tbody>
+
+			<tr>
+
+				<td>文字1</td>
+
+				<td>咨询1</td>
+
+				<td>测试1</td>
+				
+				<td>文字1</td>
+				<td>咨询1</td>
+
+				<td>测试1</td>
+				<td>文字1</td>
+
+				<td>文字1</td>
+
+				<td><input type="button" value="编辑" class="btn4"><input type="button" value="删除" class="btn5"></td>
+
+				
+			</tr>
+
+			<tr>
+
+				<td>文字2</td>
+
+				<td>咨询2</td>
+
+				<td>测试2</td>				
+
+				<td>文字2</td>
+				<td>咨询2</td>
+
+				<td>测试2</td>
+				<td>文字1</td>
+
+				<td>文字2</td>
+
+				<td><input type="button" value="编辑" class="btn4"><input type="button" value="删除" class="btn5"></td>
+
+			</tr>
+
+			<tr>
+
+
+				<td>文字3</td>
+
+				<td>咨询3</td>
+
+				<td>测试3</td>
+				
+				<td>文字3</td>
+				<td>咨询3</td>
+
+				<td>测试3</td>
+
+
+				<td>文字3</td>
+				<td>文字1</td>				
+
+
+				<td><input type="button" value="编辑" class="btn4"><input type="button" value="删除" class="btn5"></td>
+
+
+			</tr>
+
+			<tr>
+
+
+				<td>文字4</td>
+
+				<td>咨询4</td>
+
+				<td>测试4</td>			
+
+				<td>文字4</td>
+				<td>咨询4</td>
+
+				<td>测试4</td>
+				<td>文字1</td>
+
+				<td>文字4</td>
+				<td><input type="button" value="编辑" class="btn4"><input type="button" value="删除" class="btn5"></td>
+
+
+			</tr>
+
+			<tr>
+
+
+				<td>文字</td>
+
+				<td>咨询</td>
+
+				<td>测试</td>
+				
+				<td>文字</td>
+				<td>咨询</td>
+
+				<td>测试</td>
+				<td>文字1</td>
+
+				<td>文字</td>
+
+				<td><input type="button" value="编辑" class="btn4"><input type="button" value="删除" class="btn5"></td>
+
+
+			</tr>
+
+			<tr>
+
+
+				<td>文字</td>
+
+				<td>咨询</td>
+
+				<td>测试</td>
+				
+				<td>文字</td>
+				<td>咨询</td>
+
+				<td>测试</td>
+
+				<td>文字1</td>
+				<td>文字</td>
+
+				<td><input type="button" value="编辑" class="btn4"><input type="button" value="删除" class="btn5"></td>
+
+
+			</tr>
+
+		</tbody>
+
+	</table>
+	<div class="pageDiv"></div>
+	<div id="export">
+
+		<a data-type="json" href="javascript:;" class="btn3">导出json</a>
+
+		<a data-type="txt" href="javascript:;" class="btn3">导出txt</a>
+
+		<a data-type="xls" href="javascript:;" class="btn3">导出excel</a>
+
+		<a data-type="doc" href="javascript:;" class="btn3">导出word</a>
+		
+		<a data-type="xml" href="javascript:;" class="btn3">导出xml</a>
+	</div>
+	
+	
+	<!--弹出框-->
+	<div id="tc" >
+		<div id="bj">
+			<div id="gb">×</div>
+			<div style="clear:both;"></div>
+		    <h2>修改配置</h2>
+		    <div style="display: flex; justify-content:space-around;margin-top:80px;">
+		    	<div><span>编号ID:</span><input type="text" id="xq1" class="xq"></div><div><span>操作系统:</span><input type="text" class="xq" id="xq2"></div>
+		    </div>
+		    <div style="display: flex; justify-content:space-around;margin-top:80px;">
+		    	<div><span>房间标题:</span><input type="text" id="xq3" class="xq"></div><div><span>排序:</span><input type="text" class="xq" id="xq4"></div>
+		    </div>
+		    <div style="display: flex; justify-content:space-around;margin-top:80px;">
+		    	<div><span>开始时间:</span><input type="text" id="xq5" class="xq"></div><div><span>结束时间:</span><input type="text" class="xq" id="xq6"></div>
+		    </div>
+		    <div style="display: flex; justify-content:space-around;margin-top:80px;">
+		    	<div><span>是否显示:</span><input type="text" id="xq7" class="xq"></div>
+		    </div>
+		    <input type="button" id="bt2" value="确定">
+		</div>
+		
+	</div>
+	
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+</body>
+
+</html>
