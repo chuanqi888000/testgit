@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+
+.investment_f{ width:80%; margin:20px auto}
+.investment_f .investment_title{height:44px;  width:960px; overflow:hidden}
+.investment_title div{ width:131px; height:44px; background:url(../img/invest_detail_22.png); float:left; margin-right:6px; display:inline; 
+font-size:14px; font-weight:bold; text-align:center; line-height:46px; color:#555; cursor:pointer; margin-left:1px;}
+.investment_title a,.investment_title a:link,.investment_title a:visited,.investment_title a:hover{ color:#555;width:131px; height:44px;display:inline-block}
+.investment_title div.on a,.investment_title div.on a:link,.investment_title div.on a:visited,.investment_title div.on a:hover{ color:#f70}
+.investment_title div.on{background:url(../img/invest_detail_18.png); color:#f70}
+.investment_con{ clear:both; background:#fff; border:1px solid #EDEDED;padding:20px;}
+.investment_con_list{display:none;}
+input{
+	font-size:16px;
+}
+#bt{
+	color:#e1e1e1;
+}
+.inp1{
+	width:30%;border:1px #FF7700 solid;height:30px;
+}
+.sel{
+	width:27%;border:1px #FF7700 solid;height:34px;cursor:pointer;
+}
+.sj{
+	width:27%;border:1px #FF7700 solid;height:30px;
+}
+.inp2{
+	cursor:pointer;
+}
+.inp3{
+	height:30px;width:4%;border:1px #FF7700 solid;
+}
+.sj1{
+	width:14%;border:1px #FF7700 solid;height:30px;
+}
+.sel1{
+	height:34px;width:5%;border:1px #FF7700 solid;margin-left:8px;background:#FF7700;outline:none;cursor:pointer;
+}
+.inp4{
+	margin-left:8px;
+}
+.btn{
+	border:1px #FF7700 solid;height:34px;margin-left:8px;width:4%;background:#FF7700;cursor:pointer;
+}
+.sel2{
+	height:34px;width:6%;border:1px #FF7700 solid;margin-left:8px;cursor:pointer;
+}
+.btn1{
+	display: block;margin-left:36px;cursor:pointer;
+}
+.inp5{
+	height:30px;width:10%;border:1px #FF7700 solid;margin-right:8px;
+}
+.sel3{
+	height:34px;border:1px #FF7700 solid;cursor:pointer;
+}
+.btn2{
+	border:1px #FF7700 solid;height:34px;width:4%;background:#FF7700;cursor:pointer;
+}
+.num{
+	margin-right:8px;
+}
+.sp1{
+	border:1px #FF7700 solid;height:32px;display:inline-block;line-height:32px;text-align:center;background:#e1e1e1;
+}
+#sub{
+	border-radius:8px;cursor:pointer;
+}
+#res{
+	border-radius:8px;cursor:pointer;
+}
+#bt1{
+	border-radius:8px;cursor:pointer;
+}
+#xinxi{
+	display: flex;display:-webkit-box;display:box;display:-webkit-flex;display:-ms-flexbox;justify-content: space-around;
+}
+.investment_con_list table{
+	border-collapse:collapse;
+}
+.investment_con_list table thead{
+	background-color:#e9e9e9;
+}
+.investment_con_list table thead tr td{
+	width:20%;
+}
+.investment_con_list table tr {
+	border:1px solid #666;display: flex;display:-webkit-box;display:box;display:-webkit-flex;display:-ms-flexbox;justify-content: space-around;align-items: center;
+}
+.investment_con_list table tr td{
+	text-align: center;height:30px;line-height:30px;width:20%;display: flex;display:-webkit-box;display:box;display:-webkit-flex;display:-ms-flexbox;
+	justify-content: space-around;align-items: center;
+}
+.investment_con_list table tbody tr:nth-child(even){
+	background:#FF7700;
+}
+/*table tr:nth-child(odd){background:#F4F4F4;}*/
+#export{
+	margin-top:50px ;
+}
+.btn3{
+	display:inline-block;background-color:#FF7700;height: 30px;text-decoration: none;line-height:30px;width:80px;text-align: center;border-radius:8px;cursor:pointer;
+}
+.btn4{
+	background:	transparent;cursor:pointer;
+}
+.btn5{
+	background:	transparent;cursor:pointer;
+}
+#tc{
+	display:none;width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color:rgba(10,10,10,0.7);
+}
+#bj{
+	height:650px;width:50%;margin:100px auto;background:#fff;
+}
+#gb{
+	cursor: pointer;float: right;
+}
+#bj h2{
+	text-align: center;margin-top:10px;
+}
+
+.xq{
+	height:30px;line-height:30px;
+}
+#bt2{
+	height:30px;width:80px;border:1px #FF7700 solid;text-align: center;line-height:30px;border-radius:8px;display: block;margin:50px auto;
+	background: #FF7700;cursor:pointer;
+}
+#xqzs{
+	width:50%;border:1px solid #e1e1e1;min-height:100px;
+}
+.btnn{
+	border:1px #FF7700 solid;height:34px;margin-left:8px;width:4%;background:#FF7700;cursor:pointer;
+}
+
+
+/*客户页css*/
+.kh_sy{
+	text-align: center;height:30px;line-height:30px;width:100%;display: flex;display:-webkit-box;display:box;display:-webkit-flex;display:-ms-flexbox;
+	justify-content: center;align-items: center;margin-top:200px;	
+}
+
+#search{
+	text-align: center;border-radius:8px;margin-right:100px;
+}
+#search1{
+	text-align: center;border-radius:8px;margin-right:100px;
+}
+#return{
+	text-align: center;border-radius:8px;margin-top:50px;
+}
+#search_con{
+	text-align: center;border-radius:8px;margin-right:100px;margin-top:50px;
+}
+.search_news{
+	text-indent:2em;margin-bottom:10px;
+}
+#search_name{
+	border:none;background:#E1E1E1;height:30px;width:120px;line-height:30px;text-align: center;
+}
+#search_check,#search_check1{
+	background:#FF7700;margin-right:16px;border-radius:8px;outline:none;margin-left:16px ;
+}
+#qd_btn{
+	border:1px #FF7700 solid;height:34px;margin-left:8px;width:4%;background:#FF7700;cursor:pointer;
+}
+
+/*分页器*/
+.pageDiv{padding: 15px 20px;text-align: right;color: #ccc;clear: both;}
+.pageDiv a{display: inline-block;color: #4c4c4c;background: #f6fbf9;display: inline-block;height: 25px;	line-height: 25px;	padding: 3px 18px;border: 1px solid #ddd;	margin: 0 2px;vertical-align: middle;font-size: 14px;}
+.pageDiv a:hover{text-decoration: none;border: 1px solid #428bca;}
+.pageDiv span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 18px;margin: 0 2px;color: #ed601b;border-radius: 4px;vertical-align: middle;}
+.pageDiv span.disabled{display: inline-block;height: 25px;line-height: 25px;padding: 3px 18px;margin: 0 2px;	color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;vertical-align: middle;}
+.pageDiv span.pagecount{padding: 0 10px;font-size: 14px;color: #999999;margin-right: -30px;}
+.pageDiv span.countYe{color: #4C4C4C;font-size: 14px;margin-left: 30px;}
+.pageDiv span.countYe input{outline: none;border: 1px solid #ddd;height: 25px;padding: 3px 10px;width: 25px;margin: 0 5px;}
+.pageDiv a.turndown{padding: 3px 10px;}
